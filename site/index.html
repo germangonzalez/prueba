@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cambios en tiempo real</title>
+<!-- Libreria jQuery -->
+<script src="ext/jquery.min.js"></script>
+
+<!-- Código generado -->
+<script src="js/ejercicio.js"></script>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+<div id="opciones">
+  <ul>
+    <li>
+      <label for="op_colorfondo">Color de fondo:</label>
+      <input type="color" id="op_colorfondo">
+    </li>
+    <li>
+      <label for="op_ancho">Ancho:</label>
+      <input type="number" id="op_ancho" value="500">
+      px</li>
+    <li>
+      <label for="op_alto">Alto:</label>
+      <input type="number" id="op_alto" value="500">
+      px</li>
+    <li>
+      <label for="op_titulo">Título:</label>
+      <input type="text" id="op_titulo" placeholder="Escriba su título" maxlength="30">
+    </li>
+    <li>
+      <label for="op_colorfondotitulo">Color fondo titulo:</label>
+      <input type="color" id="op_colorfondotitulo">
+    </li>
+    <li>
+     <label for="op_titulo_art1">Título artículo 1:</label>
+      <input type="text" id="op_titulo_art1" placeholder="Escriba el título del artículo 1" maxlength="50">
+    </li>
+    <li>
+      <label for="op_titulo_art2">Título artículo 2:</label>
+      <input type="text" id="op_titulo_art2" placeholder="Escriba el título del artículo 2" maxlength="50">
+    </li>
+     <li>
+    <label>Barra de desplazamiento artículo 2</label>
+    <input type="radio" id="conbarra" name="barradesplazamiento" value="scroll"><label for="conbarra">Con barra</label></input>
+    
+    <input type="radio" id="sinbarra" name="barradesplazamiento" value="visible"><label for="sinbarra">Sin barra</label></input>
+    </li>
+    <li>
+      <label for="op_colorfondoart1">Color fondo artículo 1:</label>
+      <input type="color" id="op_colorfondoart1">
+    </li>
+    <li>
+      <label for="op_colorfondoart2">Color fondo artículo 2:</label>
+      <input type="color" id="op_colorfondoart2">
+    </li>
+    <li>
+    	<label for="op_tipoletra_art1">Tipo de letra artículo 1:</label>
+        <select id="op_tipoletra_art1">
+        <option value="arial">Arial</option>
+      	<option value="helvetica">Helvética</option>
+      	<option value="verdana">Verdana</option>
+        <option value="tahoma">Tahoma</option>
+      </select>           
+        </li>
+   <li>
+  	 <label for="op_tipoletra_art2">Tipo de letra artículo 2:</label>
+        <select id="op_tipoletra_art2">
+        <option value="calibri">Calibri</option>
+      	<option value="arial">Arial</option>
+      	<option value="century">Century</option>
+        <option value="calibri">Calibri</option>
+      </select>           
+        </li>
+   <li>
+  	 <label for="op_tipoletra_titulo">Tipo de letra título del resultado:</label>
+        <select id="op_tipoletra_titulo">
+        <option value="arial black">Arial black</option>
+      	<option value="cambria">Cambria</option>
+      	<option value="cooper black">Cooper black</option>
+        <option value="impact">Impact</option>
+      </select>           
+        </li>
+    <li>
+    	<label for="op_colorletra_art1">Color letra artículo 1:</label>
+        <input type="color" id="op_colorletra_art1">
+        </li>
+    <li>
+    	<label for="op_colorletra_art2">Color letra artículo 2:</label>
+        <input type="color" id="op_colorletra_art2">
+        </li>
+    <li>
+    	<label for="op_colorletra_titulo">Color letra título del resultado:</label>
+        <input type="color" id="op_colorletra_titulo">
+        </li>
+    <li>
+    	<label for="op_colorletra_footer">Color letra del footer:</label>
+        <input type="color" id="op_colorletra_footer">
+        </li>
+    <li>
+  	 <label for="op_tipoletra_footer">Tipo de letra del footer:</label>
+        <select id="op_tipoletra_footer">
+        <option value="calibri">Calibri</option>
+      	<option value="Arial">Arial</option>
+      </select>           
+        </li>
+    <li>
+      <label for="op_tamanoletra_art1">Tamaño de letra artículo 1:</label>
+      <input type="number" id="op_tamanoletra_art1">      
+      </li>
+    <li>
+      <label for="op_tamanoletra_art2">Tamaño de letra artículo 2:</label>
+      <input type="number" id="op_tamanoletra_art2">      
+      </li>
+    <li>
+      <label for="op_tamanoletra_titulo">Tamaño de letra del título:</label>
+      <input type="number" id="op_tamanoletra_titulo">
+      </li>
+    <li>
+      <label for="op_tamanoletra_footer">Tamaño de letra del footer:</label>
+      <input type="number" id="op_tamanoletra_footer">
+      </li>
+  <li>
+      <label for="fondopagina">Imagen de fondo:</label>
+      <select id="fondopagina" >
+        <option value="url(images/img1.jpg)">Imagen 1</option>
+        <option value="url(images/img2.jpg)">Imagen 2</option>
+        <option value="url(images/img3.jpg)">Imagen 3</option>
+      </select>
+    </li>
+   <li>
+      <label for="cont-pagina">Tamaño divisor:</label>
+      <input type="range" min="20%" max="65%" id="cont-pagina">
+      </li>
+   
+  </ul>
+</div>
+<div id="resultado">
+  <div id="titulo"></div>
+  <article id="articulo1">
+    <div id="titulo_art1"></div>
+  </article>
+  <article id="articulo2">
+    <div id="titulo_art2"></div>
+  </article>
+  <footer>
+  <h6>Diplomado desarrollo de apps</h6>
+  </footer>
+</div>
+</body>
+</html>
